@@ -4,6 +4,9 @@ body {
     align-items: center;
     height: 100vh;
 }
+.contact{
+    font-size: 13px;
+}
 .form-container {
     padding: 20px;
     width: 350px;
