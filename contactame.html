@@ -7,39 +7,40 @@
     <link rel="stylesheet" href="./styles/contact.css">
 </head>
 <body>
-    <h1><a href="index.html">Paulo Sergio Ciudad Quiroz</a></h1>
-    <p><b>Contacto</b></p>
+    <div>
+        <h1><a href="index.html">Paulo Sergio Ciudad Quiroz</a></h1>
+        <h3><b>Contacto</b></h3>
 
-    <p><i>paulociudadq@gmail.com</i></p>
-    <p>Tel: +51 989-811-541</p>
-
+        <p><i>paulociudadq@gmail.com</i></p>
+        <p>Tel: +51 989-811-541</p>
+    </div>
     <div class="form-container">
-        <form id="contactForm">
+        <form id="contactForm" action="https://formsubmit.co/paulociudadq@gmail.com" method="POST">
             <div class="form-group">
-                <label for="firstName">Nombres *</label>
-                <input type="text" id="firstName">
+                <label for="name">Nombres *</label>
+                <input type="text" id="name" name="name" placeholder="Nombre y Apellidos">
                 <div class="error-message">❗ Introduce tu nombre.</div>
             </div>
 
             <div class="form-group">
-                <label for="lastName">Apellidos *</label>
-                <input type="text" id="lastName">
-                <div class="error-message">❗ Introduce tu apellido.</div>
+                <label for="phone">Teléfono *</label>
+                <input type="tel" id="phone" name="phone" placeholder="Telefono">
+                <div class="error-message">❗ Introduce tu numero de telefono.</div>
             </div>
 
             <div class="form-group">
                 <label for="email">Email *</label>
-                <input type="email" id="email">
+                <input type="email" id="email" name="email" placeholder="Email">
                 <div class="error-message">❗ introduce tu correo electronico example@mysite.com.</div>
             </div>
 
             <div class="form-group">
-                <label for="message">Escribe aquí...</label>
-                <textarea id="message"></textarea>
-                <div class="error-message">❗ Introduce tu respuesta.</div>
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" id="message" placeholder="Mensaje"></textarea>
+                <div class="error-message">❗ Introduce un mensaje.</div>
             </div>
 
-            <button type="submit" class="submit-btn">Submit</button>
+            <input type="submit" class="submit-btn" value="Enviar">
         </form>
     </div>
 
