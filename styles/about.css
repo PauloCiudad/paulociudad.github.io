@@ -6,3 +6,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
 }
+
+.head{
+    display: flex;
+}
+
+.foto{
+    height: 9%;
+    width: 9%;
+}
