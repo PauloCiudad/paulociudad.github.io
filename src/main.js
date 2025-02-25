@@ -19,5 +19,5 @@ function loadPage(page) {
                 content.classList.remove('loading');
                 loader.classList.remove('active');
             });
-    }, 500);
+    }, 320);
 }
